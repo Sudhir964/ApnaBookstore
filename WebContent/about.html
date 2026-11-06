@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Sudhir Bind</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .profile-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            max-width: 650px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 42px;
+            font-weight: bold;
+            color: #fff;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .tagline {
+            font-size: 16px;
+            color: #e0e0e0;
+            margin-bottom: 25px;
+        }
+        .bio {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #d1d5db;
+            margin-bottom: 30px;
+        }
+        .details-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+            text-align: left;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            padding: 15px 20px;
+        }
+        .details-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 15px;
+        }
+        .details-list li:last-child {
+            border-bottom: none;
+        }
+        .details-list strong {
+            color: #ffd700;
+            display: inline-block;
+            width: 120px;
+        }
+        .btn-custom {
+            display: inline-block;
+            margin: 6px;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .btn-github {
+            background: #24292e;
+            color: #ffffff;
+            border: 1px solid #444d56;
+        }
+        .btn-github:hover {
+            background: #000;
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .btn-email {
+            background: #4f46e5;
+            color: #ffffff;
+        }
+        .btn-email:hover {
+            background: #4338ca;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="avatar">SB</div>
+        <h1>Sudhir Bind</h1>
+        <div class="tagline">Developer & Project Maintainer</div>
+        <p class="bio">
+            Welcome to <strong>ApnaBookstore</strong>! A modern Online Bookstore & Inventory Management web application engineered with Java Servlets, JDBC, MySQL, and responsive frontend architecture.
+        </p>
+        <ul class="details-list">
+            <li><strong>Project:</strong> ApnaBookstore - Bookstore & Inventory</li>
+            <li><strong>Developer:</strong> Sudhir Bind</li>
+            <li><strong>Email:</strong> sudhirbind472@gmail.com</li>
+            <li><strong>GitHub:</strong> github.com/sudhirbind</li>
+        </ul>
+        <div>
+            <a href="https://github.com/sudhirbind" target="_blank" class="btn btn-custom btn-github">Visit GitHub</a>
+            <a href="mailto:sudhirbind472@gmail.com" class="btn btn-custom btn-email">Contact via Email</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register Account | ApnaBookstore</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+	<link rel="manifest" href="./favicons/site.webmanifest">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		.auth-wrapper {
+			min-height: calc(100vh - 80px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 40px 16px;
+		}
+		.auth-card {
+			background: #ffffff;
+			border: 1px solid #e2e8f0;
+			border-radius: 16px;
+			box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+			max-width: 540px;
+			width: 100%;
+			padding: 36px 36px;
+		}
+		.auth-header {
+			text-align: center;
+			margin-bottom: 26px;
+		}
+		.auth-icon {
+			width: 52px;
+			height: 52px;
+			border-radius: 14px;
+			background: #dcfce7;
+			color: #16a34a;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 26px;
+			margin: 0 auto 14px auto;
+		}
+		.auth-header h2 {
+			font-size: 24px;
+			font-weight: 700;
+			color: #0f172a;
+			margin-bottom: 6px;
+		}
+		.auth-header p {
+			font-size: 14px;
+			color: #64748b;
+			margin: 0;
+		}
+		.form-row {
+			display: flex;
+			gap: 16px;
+		}
+		.form-col {
+			flex: 1;
+		}
+		.terms-checkbox {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			margin: 12px 0 20px 0;
+		}
+		.terms-checkbox input[type="checkbox"] {
+			width: auto !important;
+			margin: 0 !important;
+		}
+		.terms-checkbox label {
+			margin: 0 !important;
+			font-size: 13px !important;
+			text-transform: none !important;
+			color: #64748b !important;
+			cursor: pointer;
+		}
+		.auth-footer {
+			text-align: center;
+			margin-top: 22px;
+			font-size: 14px;
+			color: #64748b;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-sm bg-dark">
+			<a class="brand-container" href="index.html">
+				<span class="brand-logo-text">ApnaBookstore</span>
+				<span class="brand-badge">Store & Inventory</span>
+			</a>
+			
+			<button class="navbar-toggler" style="background-color: white;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNav">                
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+					<li class="nav-item"><a class="nav-link active" href="CustomerRegister.html">Register</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<div class="auth-wrapper">
+		<div class="auth-card">
+			<div class="auth-header">
+				<div class="auth-icon">
+					<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+				</div>
+				<h2>Create Customer Account</h2>
+				<p>Sign up to start browsing and ordering books</p>
+			</div>
+
+			<form action="userreg" method="post">
+				<div class="form-row">
+					<div class="form-col">
+						<label for="firstName">First Name</label>
+						<input type="text" name="firstname" id="firstName" placeholder="First Name" required>
+					</div>
+					<div class="form-col">
+						<label for="lastName">Last Name</label>
+						<input type="text" name="lastname" id="lastName" placeholder="Last Name" required>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="Email">Email Address</label>
+					<input type="email" name="mailid" id="Email" placeholder="name@example.com" required>
+				</div>
+
+				<div class="form-group">
+					<label for="passWord">Password</label>
+					<input type="password" name="password" id="passWord" placeholder="Create a secure password" required>
+				</div>
+
+				<div class="form-group">
+					<label for="phno">Mobile Phone Number</label>
+					<input type="text" name="phone" id="phno" placeholder="Enter 10-digit phone number" required>
+				</div>
+
+				<div class="form-group">
+					<label for="address">Delivery Address</label>
+					<textarea name="address" id="address" rows="2" placeholder="Street, City, State, PIN" required style="resize: vertical;"></textarea>
+				</div>
+
+				<div class="terms-checkbox">
+					<input type="checkbox" name="acceptance" id="acceptance" required>
+					<label for="acceptance">I agree to the Terms & Conditions and Privacy Policy</label>
+				</div>
+
+				<button type="submit" class="btn btn-success btn-block" style="padding: 12px !important; font-size: 15px !important;">
+					Complete Registration
+				</button>
+			</form>
+
+			<div class="auth-footer">
+				Already have an account? <a href="CustomerLogin.html" style="font-weight: 600;">Sign In here</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
